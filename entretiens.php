@@ -33,21 +33,52 @@
 	<!--End Calender-->
 </head>
 <body>
-	<section>
-		<div class="col-md-4 first-one">
-			<div class="first-one-inner">
-				<h3 class="tittle">Connexion</h3>
-			<form action="puits.php" methode="post">
-				<input type="text" class="text" value="addresse mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}" name="login">
-				<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" name="mdp">
-				<div class="submit"><input type="submit" onclick="myFunction()" value="Sign in" ></div>
-				<div class="clearfix"></div>
-				<div class="new">
-					<h3><a href="#">Mot de passe oublié ?</a></h3>
-				</div>
-			</form>
-			</div>
-		</div>
-	</section>
+    <section>
+    <?php
+        include_once "header.php";
+    ?>
+    <div class="col-md-4 skill-one">
+        <div class="twitter">
+            <span class="twitter"><lable>Angeda</lable></span>
+            <div class="t-inner">
+                <div class="t-first">
+                    <p>Entretien sur le puits Heri par <a href="#">J. Kawel</a> </p>
+                    <span>le DD/MM</span>
+                </div>
+                <div class="t-first two">
+                    <p>Entretien sur le puits B.Boss par <a href="#">Y. Choni</a> </p>
+                    <span>le DD/MM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 accordions">
+        <section class="ac-container">
+            <div>
+                <input id="ac-1" name="accordion-1" type="checkbox">
+                <label for="ac-1">Donel MAYALA</label>
+                <article class="ac-small">
+                    <p>mayaladonnel8@gmail.com <br>
+                    +243 970 631 382</p>
+                </article>
+            </div>
+            <div>
+                <input id="ac-2" name="accordion-1" type="checkbox">
+                <label for="ac-2">John JADIKA</label>
+                <article class="ac-medium">
+                    <p>mayaladonnel8@gmail.com <br>
+                     +243 970 631 382</p>
+                </article>
+            </div>
+            <div>
+                <input id="ac-3" name="accordion-1" type="checkbox">
+                <label for="ac-3">Heri KAMONDO</label>
+                <article class="ac-large">
+                    <p>mayaladonnel8@gmail.com <br>
+                    +243 970 631 382</p>
+                </article>
+        </section>
+    </div>
+    </section>
 </body>
 </html>
