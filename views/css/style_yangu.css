@@ -1,0 +1,23 @@
+.first-one-inner{
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px silver;
+}
+.first-one{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.top-nav{
+    float: right;
+    width: 50%;
+}
+.top-header{
+    box-shadow: 0px 0px 2px silver;
+}
+.deals{
+    width: 35%;
+    float: right;
+}
+#map{
+    float: left;
+}
