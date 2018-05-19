@@ -34,28 +34,9 @@
 </head>
 <body>
     <section>
-    <div class="top-header">
-            <!--top-nav-->
-            <div class="col-md-8 top-nav">
-                <span class="menu"> <img src="images/icon.png" alt=""></span>
-                <ul class="res">
-                    <li><a href="#home" class="active" ><i class="glyphicon"> </i> Puits</a></li>
-                    <li><a href="#"><i class="glyphicon"> </i> Entretiens</a></li>
-                    <li><a href="#"><i class="glyphicon"> </i> Rapports </a></li>
-                </ul>
-    <!-- script-for-menu -->
-                    <script>
-                    $( "span.menu" ).click(function() {
-                        $( "ul.res" ).slideToggle( 300, function() {
-                        // Animation complete.
-                        });
-                        });
-                </script>
-                <!-- /script-for-menu -->
-            </div>
-            <div class="clearfix"> </div>
-        <!--top-nav-->
-    </div>
+    <?php
+        include_once "header.php";
+    ?>
     <div id="map" style="height:60%;width:63%"></div>
     <div class="deals">
         <div class="sap_tabs">	
@@ -81,7 +62,34 @@
                             <h2 class="resp-accordion" role="tab" aria-controls="tab_item-5">
                             <span class="resp-arrow"></span>TAB DATA</h2>
                             <h2 class="resp-accordion" role="tab" aria-controls="tab_item-6"><span class="resp-arrow"></span></h2><h2 class="resp-accordion" role="tab" aria-controls="tab_item-7"><span class="resp-arrow"></span></h2><h2 class="resp-accordion" role="tab" aria-controls="tab_item-8"><span class="resp-arrow"></span></h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-                                <p>he printing and typesetting industry.Lorem Ut wisi enim ad minim veniam,nostrud exerci tation ullamcorpersuscipit lobortis nisl ut aliquip ex eacommodo consequat. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                                <p>
+                                    Type: XXXX <br>
+                                    Description: XXXXX <br>
+                                    le DD/MM à HH:mm
+                                </p><hr>
+                                <p>
+                                    Type: XXXX <br>
+                                    Description: XXXXX <br>
+                                    le DD/MM à HH:mm
+                                </p><hr>
+                            </div>
+                            <h2 class="resp-accordion" role="tab" aria-controls="tab_item-5">
+                            <span class="resp-arrow"></span>TAB DATA</h2>
+                            <h2 class="resp-accordion" role="tab" aria-controls="tab_item-6"><span class="resp-arrow"></span></h2><h2 class="resp-accordion" role="tab" aria-controls="tab_item-7"><span class="resp-arrow"></span></h2><h2 class="resp-accordion" role="tab" aria-controls="tab_item-8"><span class="resp-arrow"></span></h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+                                <p>
+                                    Agent responsable: XXXX<br>
+                                    Date d'installation: XX/XX/XXXX <br>
+                                    Date du dernier entretien: XX/XX/XXXX <br>
+                                    Date du prochain entretient: XX/XX/XXXX <br>
+                                    etat: Oppérationnel
+                                </p><hr>
+                                <p>
+                                    Agent responsable: XXXX<br>
+                                    Date d'installation: XX/XX/XXXX <br>
+                                    Date du dernier entretien: XX/XX/XXXX <br>
+                                    Date du prochain entretient: XX/XX/XXXX <br>
+                                    etat: Oppérationnel
+                                </p><hr>
                             </div>										
                     </div>
                 </div>
